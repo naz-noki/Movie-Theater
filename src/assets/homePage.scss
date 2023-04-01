@@ -1,0 +1,134 @@
+.homePage__wrapper{
+    min-width: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    ._filmInfo-bg{
+        width: 100%;
+        height: 100%;
+    }
+    .homePage__slider__controls{
+        width: 200px;
+        height: max-content;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        margin: 15px auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        .homePage__slider__control{
+            width: 35px;
+            height: 35px;
+            font-size: 25px;
+            color: #FFFFFF;
+            opacity: 0.75;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: 250ms;
+        }
+        .homePage__slider__control:hover{
+            transition: 250ms;
+            font-size: 27px;
+            color: #ffffff;            
+        }
+        .active__control{
+            transition: 250ms;
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    }
+    .homePage__wrapper_filmInfo{
+        width: 400px;
+        height: 250px;
+        margin-top: -750px;
+        margin-left: 100px;
+        position: absolute;
+        ._filmInfo__title{
+            width: max-content;
+            height: max-content;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 56px;  
+            color: rgba(255, 255, 255, 0.788);
+        }
+        ._filmInfo__rating{
+            width: 75px;
+            height: 17px;
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 12px;
+            color: rgba(255, 255, 255, 0.781);
+            ._filmInfo__rating{
+                width: 47px;
+                height: 19px;
+            }
+        }
+        ._filmInfo__Plot{
+            width: 250px;
+            height: max-content;
+            margin-top: 15px;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 18px;
+            color: rgba(255, 255, 255, 0.767); 
+        }
+        ._filmInfo__btn{
+            width: 160px;
+            height: 36px;
+            margin-top: 22px;
+            border: none;
+            background-color: #BE123C;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;         
+            ._filmInfo__btn-img{
+                width: 20px;
+                height: 20px;
+            }
+            ._filmInfo__btn-text{
+                margin-left: 8px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #FFFFFF;   
+            }
+        } ._filmInfo__btn::before{
+            position: absolute;
+            content: "";
+            width: 0px;
+            background-color: rgba(255, 255, 255, 0.76);
+            height: 2px;
+            margin-top: 35px;
+            transition: 100ms;
+        }
+        ._filmInfo__btn:hover{
+            transition: 150ms;
+            background-color: transparent;
+            ._filmInfo__btn-text{
+                color: rgba(255, 255, 255, 0.795);
+            }
+        }
+        ._filmInfo__btn:hover::before{
+            transition: 150ms;
+            width: 120px;
+        }
+    }
+}

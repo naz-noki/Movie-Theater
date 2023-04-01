@@ -1,0 +1,107 @@
+.filmInfo__wrapper{
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    .filmInfo__block{
+        width: 1320px;
+        height: max-content;
+        margin: 0 auto;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .filmInfo__block_Poster{
+            width: max-content;
+            height: max-content;
+            .filmInfo__block_Poster-img{
+                width: 300px;
+                height: 445px;
+            }
+            .filmInfo__block_addFavouriteFilm{
+                width: 300px;
+                height: 445px;    
+                position: absolute;
+                opacity: 0;
+                transition: 250ms;
+                -webkit-box-shadow: 0px 0px 100px 100px rgba(202, 202, 202, 0.7) inset;
+                -moz-box-shadow: 0px 0px 100px 100px rgba(202, 202, 202, 0.7) inset;
+                box-shadow: 0px 0px 100px 100px rgba(202, 202, 202, 0.7) inset;
+                ._addFavouriteFilm_btn{
+                    cursor: pointer;
+                    color: aliceblue;
+                    width: 70px;
+                    height: 70px;
+                    font-size: 50px;
+                    border: none;
+                    margin-left: 115px;
+                    margin-top: 185px;
+                    border-radius: 50px;
+                    background-color: #BE123C;
+                }
+                ._addFavouriteFilm_btn_active{
+                    color: #BE123C;
+                    background-color: aliceblue;
+                }
+            }
+            .filmInfo__block_addFavouriteFilm:hover{
+                transition: 350ms;
+                opacity: 1.5;
+            }
+        }
+        .filmInfo__block_info{
+            width: max-content;
+            height: max-content;
+            .__block_info_title{
+                width: 500px;
+                padding-bottom: 25px;
+                font-size: 50px;
+                font-weight: bolder;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .__block_info{
+                font-size: 30px;
+                padding-top: 15px;
+                font-family: 'Times New Roman', Times, serif;
+                span{
+                    font-weight: bold;
+                }
+            }
+            .__block_info_imdbRating{
+                margin-top: 20px;
+                width: 90px;
+                height: max-content;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 25px;
+                font-weight: 800;
+                .__block_info_imdbRating_img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+    .filmInfo__block_Plot{
+        width: 1050px;
+        height: max-content;
+        margin: 0 auto;
+        margin-top: 50px;        
+        font-size: 25px;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-bottom: 50px;
+    }
+    .filmInfo__block_trailer{
+        width: 1050px;
+        height: max-content;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        .filmInfo__block_trailer_text{
+            font-size: 50px;
+            font-weight: bolder;
+            margin-left: 190px;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+.favoriteFilms__wrapper{
+    width: 1440px;
+    min-height: 83vh;
+    height: max-content;
+    margin: 0 auto;
+    .favoriteFilms_block{
+        width: 1240px;
+        height: 47px;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .favoriteFilms_title{
+            width: max-content;
+            height: max-content;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 47px;
+            color: #000000;            
+        }
+        .favoriteFilms_btnS{
+            width: 75px;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .favoriteFilms_btn{
+                border-radius: 5px;
+                border: none;
+                color: #BE123C;
+                cursor: pointer;
+                width: 34px;
+                height: 34px;
+                font-size: 30px;
+                background-color: transparent;  
+                transition: 300ms;              
+            }
+            .favoriteFilms_btn:hover{
+                transition: 300ms; 
+                color: azure;
+                background-color: #BE123C;
+            }
+        }
+    }
+    .favoriteFilms__ul{
+        max-width: 1240px;
+        height: max-content;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        .favoriteFilms__li{
+            margin-top: 10px;
+            border-radius: 5px;
+            width: 250px;
+            height: 490px;
+            transition: 150ms;
+            cursor: pointer;
+            overflow: hidden;  
+            .favoriteFilms__li_del{
+                width: 20px;
+                height: 30px;
+                color: aliceblue;
+                background-color: #ffffff5d;
+                font-size: 21px;
+                margin-top: 5px;
+                margin-left: 225px;
+                border: none;
+                border-radius: 5px;
+                position: absolute;
+                cursor: pointer;
+                transition: 150ms;
+            }
+            .favoriteFilms__li_del:hover{
+                transition: 125ms;
+                background-color: transparent;
+                color: #BE123C;
+            }
+            .favoriteFilms__li_poster{
+                cursor: default;
+                width: 250px;
+                height: 370px;
+            }
+            .favoriteFilms__li_date{
+                width: max-content;
+                height: 16px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                color: #9CA3AF;                
+            }
+            .favoriteFilms__li_name{
+                width: max-content;
+                height: 23px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 23px;
+                margin-top: 11px;
+                color: #111827;            
+            }
+            .favoriteFilms__li_rating{
+                width: max-content;
+                height: 17px;
+                margin-top: 14px;
+                display: flex;
+                align-items: center;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 12px;
+                color: #111827;                
+                .favoriteFilms__li_rating_img{
+                    width: 35px;
+                    height: 17px;
+                    padding-right: 10px;
+                }
+            }
+            .favoriteFilms__li_genre{
+                width: max-content;
+                height: 16px;
+                margin-top: 13px;
+                font-family: 'DM Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 16px;
+                color: #9CA3AF;                
+            }
+        }
+        .favoriteFilms__li:hover{
+            transition: 130ms;
+            width: 250px;
+            height: 490px;         
+            margin-top: -3px;
+            -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+            box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);            
+        }
+    }
+}
