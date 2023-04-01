@@ -106,11 +106,11 @@ export default{
 
         const nextPage = ():void => {
             arryMin.value = arryMax.value;
-            if(favoriteFilms.value.length-1 < arryMax.value*2)  arryMax.value = favoriteFilms.value.length - 1;
+            if(favoriteFilms.value.length-1 < arryMax.value*2)  arryMax.value = favoriteFilms.value.length;
             else arryMax.value = arryMin.value*2;
             films.value = favoriteFilms.value.slice(arryMin.value, arryMax.value);   
             prevPageBtn.value = true;     
-            if(favoriteFilms.value.length-1 == arryMax.value) nextPageBtn.value = false;
+            if(favoriteFilms.value.length == arryMax.value) nextPageBtn.value = false;
         }
 
         const prevPage = ():void => {
